@@ -2,13 +2,9 @@ package minhasclasses;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.ZoneId;
-import java.util.Date;
 
-/**
- *
- * @author vitor
- */
+
+
 public class Pessoa {
 
     private String nome;

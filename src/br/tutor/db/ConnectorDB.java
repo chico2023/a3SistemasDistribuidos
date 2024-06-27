@@ -1,19 +1,16 @@
 
-package br.pet.db;
+package br.tutor.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- *
- * @author vitor
- */
+
 public class ConnectorDB {
 
-    private String url = "jdbc:mysql://localhost:3306/bd_petcare";
-    private String username = "petcare";
-    private String password = "petcare";
+    private final String url = "jdbc:mysql://localhost:3306/db_tutor";
+    private final String username = "root";
+    private final String password = "Francindei7@";
     
     
     public Connection getConnection()throws SQLException, ClassNotFoundException{

@@ -1,13 +1,10 @@
-/*CREATE DATABASE sistemaCastrado;*/
-USE sistemaCadastro;
-
-CREATE TABLE cadastroinstutor(
-id_cliente int auto_increment primary key not null,
-primeironome varchar(25) not null, 
-sobrenome varchar(20) not null,
-cpf int not null auto_increment,
-endereço varchar (30),
-telefone varchar(12),
-datanascimento date not null,
-idade int,
-);
+CREATE TABLE IF NOT EXISTS `db_tutor`.`pessoa` (
+  `idpessoa` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NOT NULL,
+  `cpf` CHAR(11) NOT NULL,
+  `endereco` VARCHAR(100) NOT NULL,
+  `nascimento` DATE NOT NULL,
+  `telefone` CHAR(11) NOT NULL,
+  PRIMARY KEY (`idpessoa`),
+  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC)
+) ENGINE = InnoDB;

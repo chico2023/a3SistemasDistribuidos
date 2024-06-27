@@ -1,4 +1,4 @@
-package br.pet.db;
+package br.tutor.db;
 
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -7,10 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import minhasclasses.Pessoa;
 
-/**
- *
- * @author vitor
- */
+
 public class PessoaDB {
 
     public void salvar(Pessoa pessoa) throws ClassNotFoundException {

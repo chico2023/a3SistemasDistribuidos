@@ -1,6 +1,6 @@
 
 
-import br.pet.db.PessoaDB;
+import br.tutor.db.PessoaDB;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileWriter;
